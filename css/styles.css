@@ -1,5 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+body {
+	background-color: black;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+#bg {
+	background-image: url(#);
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding:40px 70px 120px 70px;
+	background-size: cover;
+
+}
 
 
-p.response {
+.foreground {
+  padding: 40px;
+  background: rgb(34,34,34); /* for IE */
+ 	background: rgba(34,34,34,0.75);
+ 	margin-left: auto;
+ 	margin-right: auto;
+	float: none;
+}
+
+
+.page-head {
+	color: #dcddcd;
+	font-family: 'Noto Sans' sans-serif;
+	padding: 5px;
+}
+
+#temp {
+	color: #83bf17;
+}
+
+#temp-switch {
+  font-size: 25px;
+  font-family: 'Noto Sans' sans-serif;
+  color: #dcddcd;
+}
+
+.active-temp {
+  color: #83bf17;
+}
+
+.page-body {
+	font-size: 50px;
+	color: #dcddcd;
+	font-family: 'Poiret One', cursive;
+}
+
+.info-block {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#date {
+	font-size: 30px;
+	color: #dcddcd;
+	font-family: 'Poiret One', cursive;
+}
+
+.foreground h1 {
+	color:#dcddcd;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Poiret One', cursive;
+}
+
+#windDirection {
+  color: #dcddcd;
+  font-size: 30px;
+}
+
+#wind-icon {
+  height: 90px;
+}
+
+#out {
+	color:#dcddcd;
+	text-align: center;
 	font-size: 20px;
+	font-family: "Noto Sans", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+    body .page-head {
+        font-size: 2em;
+        text-align: center;
+    }
+    .info-block {
+		margin-top: 20px;
+		margin-bottom: 0px;
+		font-size: 0.8em;
+	}
+	.foreground {
+  		padding: 10px;
+  	}
+  	#bg {
+  		padding:40px 20px 120px 20px;
+  	}
+  .date {
+    text-align: center !important;
+    
+  }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body .page-head {
+        font-size: 4.2em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body .page-head {
+        font-size: 4.2em;
+    }
+    #windDirection {
+        position:relative;
+        bottom: 0px;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body .page-head {
+        font-size: 5em;
+    }
+  
+    .info-block {
+	
+	      font-size: 1em;
+	  }
+    #windDirection {
+        position:relative;
+        bottom: 0px;
+    }
 }
